@@ -1,0 +1,385 @@
+*{ /* Para deixar com margem 0 e o box-sizing:border-box para deixar tudo em formato de caixa */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Product Sans;
+    
+}
+
+@font-face{
+    font-family: Product Sans;
+    src:url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,body {
+    height: 100vh;
+    width: 100%;
+    background:black;
+}
+#main {
+    min-height: 100vh;
+    padding-top: 10px;
+    background-color: black;
+}
+
+
+/* Para deixar o menu fixo quando rolar a tela e o  para o menu se alinhar no centro */
+.nav-container{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    display:flex;
+    align-items: center ;
+    justify-content:space-between;
+    z-index: 99;
+    padding: 20px 40px;
+    
+    
+}
+
+/* Para tirar a barra do link */
+.nav-container a{
+    color:white;
+    text-decoration:none;
+    font-size: 24px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.lados {
+    display: flex;
+    height: 100vh;
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 30px;
+
+}
+
+.direita {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+
+#minha_foto {
+    width: 350px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 10%;
+    z-index: 10;
+}
+
+#git{
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    background-color:white;
+}
+
+#linkedin{
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    background-color:white;
+}
+
+#sobre {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+#texto {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+    max-width: 500px;
+}
+
+.icones{
+    display:flex;
+}
+
+
+/*  Segunda página*/
+
+.pagina2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    gap: 40px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.img_esporte img{
+    display:flex;
+    width: 300px;
+    border-radius:10px;    
+}
+
+.img_esporte img, .img_familia img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.img_familia img{
+    display:flex;
+    border-radius:10px;
+    width: 300px;
+}
+
+.texto_esporte, .texto_familia {
+    max-width: 200px;   
+    color: white;      
+    text-align: center;
+    font-size:20px 
+}
+
+#familia1{
+    margin-bottom: 20px;
+}
+
+#esportes1{
+    margin-bottom: 20px;
+}
+
+
+.hobbies {
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+
+.hobbies h2 {
+    color: white;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+
+/*Terceira página*/
+
+.pagina3{
+    width:100%;
+    min-height:100vh;
+    background: black;
+    padding: 40px 20px;
+    box-sizing:border-box ;
+}
+
+#projetos1{
+
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:36px;
+    letter-spacing: 2px;
+}
+
+#texto_html{
+    color: white;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+#video{
+    width: 100%;
+    width: 800px;
+    height: auto;
+}
+
+.projeto_html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/*PAGINA 4*/
+
+.pagina4{
+    width: 100%;
+    height:100vh;
+}
+
+#link{
+    text-align: center;
+    color:white
+}
+
+
+.pagina4{
+    width:100%;
+    height:100vh;
+}
+
+#projetos2{
+    margin-bottom: 40px;
+    padding: 40px;
+    text-align: center;
+    color:white;
+    font-size:36px;
+    letter-spacing: 2px;
+}
+
+.conteudo4{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    align-items: center;
+    padding: 40px 20px;
+
+}
+
+#texto4{
+    color:white;
+    max-width: 300px;
+    font-size:20px;
+}
+
+#ilove{
+    width:100%;
+    width:800px;
+    height:auto;
+}
+
+/*PAGINA 5*/
+
+.pagina5{
+    width:100%;
+    height:100vh;
+    color:white;
+}
+
+.contatos2{
+    display: flex;
+    flex-direction: column;
+}
+
+#contatos1{
+    text-align:center;
+    margin-bottom: 40px;
+    padding: 80px;
+    font-size:36px;
+    letter-spacing: 2px;
+
+}
+
+#icone_email{
+    width:30px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+}
+
+button:hover {
+    background-color: #63a4ff;
+  }
+
+.email{
+    gap:10px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+
+#git3{
+    background-color: white;
+    width:40px;
+}
+
+.github1{
+    margin-bottom: 20px;
+    gap:23px;
+    display:flex;
+    justify-content: center;
+    font-size:20px;
+}
+
+.linkedin1{
+    margin-bottom: 20px;
+    gap:10px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-size:20px;
+}
+
+#linkedin3{
+    width: 40px;
+    background-color: white;
+}
+
+.telefone{
+    margin-bottom: 20px;
+    gap:10px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-size:20px;
+
+}
+
+#telefone1{
+    width: 40px;
+    background-color: white;
+}
+
+.invisivel {
+    opacity: 0;
+    filter:blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  
+  .visivel {
+    opacity: 1;
+    filter:blur(0px);
+    transition: all 1s;
+    transform:translateX(0);
+  }
+  
+
+
+
+
+
+
